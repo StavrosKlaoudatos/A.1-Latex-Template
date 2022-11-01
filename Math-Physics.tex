@@ -1,33 +1,44 @@
 \documentclass{article}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+
 \usepackage{subfiles}
 \usepackage{mathtools}
 \usepackage{algorithm}
 \usepackage{mathptmx}
-\usepackage{chemfig}
+\usepackage{amsthm}
+\usepackage{makeidx}
 \usepackage{amsmath}
 \usepackage{pgfplots}
 \usepackage{graphics}
-\usetikzlibrary{positioning}
+\newtheorem{definition}{Definition}
 \usepackage{xcolor}
 \usepackage{hyperref}
-\usepackage{imakeidx}
+\usepackage{mathrsfs}
 \usepackage{mathtools}
+\usepackage{tikz-cd}
 \usepackage{algorithm}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{amsthm}
+
 \usepackage{amsfonts}
 \usepackage{braket}
-\usepackage{fancyhdr}
-\usepackage{lipsum}
 \usepackage{lmodern}
 \usepackage{tcolorbox}
-\pgfplotsset{compat=1.17}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Stavros Klaoudatos}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\rfoot{Page \thepage}
+\makeindex
 \fancypagestyle{mypagestyle}{
     \pagestyle{fancy}
     \pagestyle{myheadings}
 }
+
 
 
 \newcommand{\bb}[1]{\begin{tcolorbox}
@@ -37,7 +48,7 @@
 \newcommand{\rb}[1]{\begin{tcolorbox}[colframe=red!50!white]
 #1
 \end{tcolorbox}}
-\newtheorem{definition}{Definition}
+
 \newcommand{\Bb}[1]{\begin{tcolorbox}[colframe=blue!50!white]
 {#1}
 \end{tcolorbox}}
@@ -50,7 +61,6 @@
 \newcommand{\A}{a^\dagger}
 
 \renewcommand{\d}[1]{\begin{definition} #1\end{definition}}
-
 
 \title{My Template}
 \author{Stavros Klaoudatos}
